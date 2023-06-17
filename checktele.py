@@ -11,19 +11,7 @@ import requests
 from user_agent import *
 from help import *
 from config import *
-from threading import Thread
-
-a = 'qwertyuiopasdfghjklzxcvbnm'
-b = '0'
-e = '1'
-z = '2'
-h = '3'
-k = '4'
-q = '5'
-v = '6'
-n = '7'
-i = '8'
-p = '9'
+from threading import Threa
 
 banned = []
 isclaim = ["off"]
@@ -47,12 +35,12 @@ def check_user(username):
     if response.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"') >= 0:
         return "Available"
     else:
-        return "Unavailable"
+        return "Unava
 
-def gen_user(choice):
-    if choice == "1":
+def 
+    if choice ==
         c = random.choices(a)
-        d = random.choices(a)
+        d = random.choices
         s = random.choices(b)
         f = [c[0], d[0], s[0], s[0], s[0]]    
         username = ''.join(f)
